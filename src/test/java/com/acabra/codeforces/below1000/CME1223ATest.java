@@ -7,7 +7,7 @@ public class CME1223ATest {
 
     @Test
     public void should_return_0() {
-        Assert.assertEquals(1, CME1223A.Solution.solution(4));
+        Assert.assertEquals(0, CME1223A.Solution.solution(4));
     }
 
 }
