@@ -1,5 +1,6 @@
 package com.acabra.codeforces;
 
+import javax.swing.*;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -7,7 +8,7 @@ import java.util.ArrayDeque;
 import java.util.StringTokenizer;
 
 public class SubmissionHelper {
-    private static final String inputClassName = "LoveA1146A";
+    private static final String inputClassName = null;
     private static final String outputName = "Solution.java";
     private static final String FILE_SEPARATOR = System.getProperty("file.separator");
     private final String source;
@@ -25,7 +26,12 @@ public class SubmissionHelper {
     }
 
     public static void main(String[] args) throws IOException {
-        String fileName = inputClassName + ".java";
+        String fileName;
+        if (inputClassName != null) {
+            fileName = inputClassName + ".java";
+        } else {
+            fileName = JOptionPane.showInputDialog("input the java file name") + ".java";
+        }
         try {
             SubmissionHelper.of(getPackageName(), fileName).buildSubmissionFile();
         } catch (IOException e) {
