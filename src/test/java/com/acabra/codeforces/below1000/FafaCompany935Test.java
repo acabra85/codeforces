@@ -19,7 +19,7 @@ public class FafaCompany935Test {
 
     @Test
     public void should_return_1_1() throws IOException {
-        FafaCompany935.Solution.Help help = FafaCompany935.Solution.Help.of("codeforces/below1000/935.txt");
+        FafaCompany935.Solution.Help help = FafaCompany935.Solution.Help.of("below1000/935.txt");
         Assert.assertEquals(1, FafaCompany935.Solution.solution(help.nInt()));
     }
 

@@ -18,13 +18,13 @@ public class Polyhedrons785Test {
 
     @Test
     public void should_return_42() throws IOException {
-        help = Polyhedrons785.Solution.Help.of("codeforces/below1000/785_0.txt");
+        help = Polyhedrons785.Solution.Help.of("below1000/785_0.txt");
         Assert.assertEquals(42, Polyhedrons785.Solution.solution(help));
     }
 
     @Test
     public void should_return_28() throws IOException {
-        help = Polyhedrons785.Solution.Help.of("codeforces/below1000/785_1.txt");
+        help = Polyhedrons785.Solution.Help.of("below1000/785_1.txt");
         Assert.assertEquals(28, Polyhedrons785.Solution.solution(help));
     }
 }

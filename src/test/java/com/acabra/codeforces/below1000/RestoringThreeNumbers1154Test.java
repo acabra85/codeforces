@@ -32,7 +32,7 @@ public class RestoringThreeNumbers1154Test {
     @Test
     public void test_4() throws IOException {
         List<Integer> expected = List.of(1, 2, 3);
-        RestoringThreeNumbers1154.Solution.Help help = RestoringThreeNumbers1154.Solution.Help.of("codeforces/below1000/1154_0.txt");
+        RestoringThreeNumbers1154.Solution.Help help = RestoringThreeNumbers1154.Solution.Help.of("below1000/1154_0.txt");
         int[] input = {help.nInt(), help.nInt(), help.nInt(), help.nInt()};
         help.close();
         Assert.assertEquals(expected, RestoringThreeNumbers1154.Solution.solution(input));
