@@ -7,7 +7,7 @@ import java.util.ArrayDeque;
 import java.util.StringTokenizer;
 
 public class SubmissionHelper {
-    private static final String inputClassName = "BetweenOffices867A";
+    private static final String inputClassName = "LoveA1146A";
     private static final String outputName = "Solution.java";
     private static final String FILE_SEPARATOR = System.getProperty("file.separator");
     private final String source;
