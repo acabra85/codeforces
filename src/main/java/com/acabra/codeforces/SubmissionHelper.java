@@ -73,7 +73,7 @@ public class SubmissionHelper {
                     wrapperClassDeclareFixed = true;
                     continue;
                 }
-                if (!solutionClassStaticReplaced && line.contains("static public class Solution")) {
+                if (!solutionClassStaticReplaced && line.contains("class Solution")) {
                     submissionContents.add("public class Solution {\n");
                     solutionClassStaticReplaced = true;
                     continue;
